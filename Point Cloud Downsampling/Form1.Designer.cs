@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.RemoveColorInfo = new System.Windows.Forms.CheckBox();
             this.Run = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BrowseForInput
@@ -89,9 +90,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(79, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 17);
+            this.label2.Size = new System.Drawing.Size(216, 17);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Input folder path to save the output file";
+            this.label2.Text = "Input Folder Path to save xyz File";
             // 
             // downsamplingValue
             // 
@@ -130,11 +131,22 @@
             this.Run.UseVisualStyleBackColor = true;
             this.Run.Click += new System.EventHandler(this.Run_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(389, 210);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(188, 17);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Number of Points Processed";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 361);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.Run);
             this.Controls.Add(this.RemoveColorInfo);
             this.Controls.Add(this.label3);
@@ -164,6 +176,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox RemoveColorInfo;
         private System.Windows.Forms.Button Run;
+        private System.Windows.Forms.Label label4;
     }
 }
 
